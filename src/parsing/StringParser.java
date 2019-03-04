@@ -124,7 +124,7 @@ public class StringParser<T> {
             token = Token.ABS;
             checkNextPosition(index + 3);
             index += 2;
-        } else if (index + 6 < expression.length() && expression.substring(index, index + 4).equals("square")) {
+        } else if (index + 6 < expression.length() && expression.substring(index, index + 6).equals("square")) {
             token = Token.SQR;
             checkNextPosition(index + 6);
             index += 5;

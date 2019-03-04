@@ -91,7 +91,10 @@ public class IntegerOperator implements Operator<Integer> {
     }
 
     @Override
-    public Integer mod(Integer x, Integer y) {
+    public Integer mod(Integer x, Integer y) throws IllegalOperationException {
+        if (y == 0) {
+            throw new IllegalOperationException("Division by zero");
+        }
         return x % y;
     }
 
@@ -142,7 +145,7 @@ public class IntegerOperator implements Operator<Integer> {
     }
 
     @Override
-    public Integer sqr(Integer x) throws IllegalOperationException {
-        return x * x;
+    public Integer sqr(Integer x) throws IllegalOperationException, OverflowException {
+        return mul(x, x);
     }
 }

@@ -38,8 +38,11 @@ public class ByteOperator implements Operator<Byte>  {
     }
 
     @Override
-    public Byte mod(Byte x, Byte y) {
-        return null;
+    public Byte mod(Byte x, Byte y) throws IllegalOperationException {
+        if (y == 0) {
+            throw new IllegalOperationException("Division by zero");
+        }
+        return (byte) (x % y);
     }
 
     @Override
@@ -57,7 +60,7 @@ public class ByteOperator implements Operator<Byte>  {
 
     @Override
     public Byte abs(Byte x) throws OverflowException {
-        return (max(x, (byte) -x));
+        return (byte) Math.abs(x);
     }
 
     @Override

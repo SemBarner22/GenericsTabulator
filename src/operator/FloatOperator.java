@@ -39,7 +39,7 @@ public class FloatOperator implements Operator<Float> {
 
     @Override
     public Float mod(Float x, Float y) {
-        return null;
+        return x % y;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class FloatOperator implements Operator<Float> {
 
     @Override
     public Float abs(Float x) throws OverflowException {
-        return max(x, -x);
+        return Math.abs(x);
     }
 
     @Override

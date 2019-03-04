@@ -18,7 +18,7 @@ public abstract interface Operator<T> {
 
     T min(final T x, final T y);
 
-    T mod(final T x, final T y);
+    T mod(final T x, final T y) throws IllegalOperationException;
 
     T div(final T x, final T y) throws EvaluatingException;
 

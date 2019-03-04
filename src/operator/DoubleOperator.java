@@ -27,12 +27,7 @@ public class DoubleOperator implements Operator<Double> {
 
     @Override
     public Double div(Double x, Double y) throws EvaluatingException {
-        if ((x / y) == 0.0 && (x < 0 || y < 0)) {
-            return -0.0;
-        }
-        else {
-            return x / y;
-        }
+        return x / y;
     }
 
 
@@ -48,7 +43,7 @@ public class DoubleOperator implements Operator<Double> {
 
     @Override
     public Double mod(Double x, Double y) {
-        return null;
+        return x % y;
     }
 
     @Override
@@ -58,7 +53,7 @@ public class DoubleOperator implements Operator<Double> {
 
     @Override
     public Double abs(Double x) throws OverflowException {
-        return max(x, -x);
+        return Math.abs(x);
     }
 
     @Override

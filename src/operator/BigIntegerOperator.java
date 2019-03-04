@@ -39,7 +39,9 @@ public class BigIntegerOperator implements Operator<BigInteger> {
     }
 
     @Override
-    public BigInteger mod(BigInteger x, BigInteger y) {
+    public BigInteger mod(BigInteger x, BigInteger y) throws IllegalOperationException {
+        checkDivide(y);
+        checkModulus(y);
         return x.mod(y);
     }
 
@@ -49,6 +51,11 @@ public class BigIntegerOperator implements Operator<BigInteger> {
         return x.divide(y);
     }
 
+    private void checkModulus(BigInteger y) throws IllegalOperationException {
+        if (y.compareTo(BigInteger.ZERO) <= 0) {
+            throw new IllegalOperationException("Division by zero");
+        }
+    }
     private void checkDivide(BigInteger y) throws IllegalOperationException {
         if (y.equals(BigInteger.ZERO)) {
             throw new IllegalOperationException("Division by zero");
