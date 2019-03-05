@@ -8,7 +8,7 @@ public abstract class AbstractBinaryOperation<T> implements TripleExpression<T> 
     private TripleExpression<T> firstExpression, secondExpression;
     Operator<T> operation;
 
-    public AbstractBinaryOperation(TripleExpression<T> firstExpression, TripleExpression<T> secondExpression, Operator<T> op) {
+    AbstractBinaryOperation(TripleExpression<T> firstExpression, TripleExpression<T> secondExpression, Operator<T> op) {
         this.firstExpression = firstExpression;
         this.secondExpression = secondExpression;
         operation = op;

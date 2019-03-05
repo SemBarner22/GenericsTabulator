@@ -5,7 +5,7 @@ import exceptions.IllegalConstantException;
 import exceptions.IllegalOperationException;
 import exceptions.OverflowException;
 
-public abstract interface Operator<T> {
+public interface Operator<T> {
     T parseNumber(final String number) throws IllegalConstantException;
 
     T add(final T x, final T y) throws OverflowException;

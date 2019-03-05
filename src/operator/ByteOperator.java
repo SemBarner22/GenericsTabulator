@@ -1,29 +1,27 @@
 package operator;
 
 import exceptions.EvaluatingException;
-import exceptions.IllegalConstantException;
 import exceptions.IllegalOperationException;
-import exceptions.OverflowException;
 
 public class ByteOperator implements Operator<Byte>  {
 
     @Override
-    public Byte parseNumber(String number) throws IllegalConstantException {
+    public Byte parseNumber(String number)  {
         return (byte) Integer.parseInt(number);
     }
 
     @Override
-    public Byte add(Byte x, Byte y) throws OverflowException {
+    public Byte add(Byte x, Byte y) {
         return (byte) (x + y);
     }
 
     @Override
-    public Byte sub(Byte x, Byte y) throws OverflowException {
+    public Byte sub(Byte x, Byte y)  {
         return (byte) (x - y);
     }
 
     @Override
-    public Byte mul(Byte x, Byte y) throws OverflowException {
+    public Byte mul(Byte x, Byte y)  {
         return (byte) (x * y);
     }
 
@@ -54,17 +52,17 @@ public class ByteOperator implements Operator<Byte>  {
     }
 
     @Override
-    public Byte not(Byte x) throws OverflowException {
+    public Byte not(Byte x) {
         return (byte) (-x);
     }
 
     @Override
-    public Byte abs(Byte x) throws OverflowException {
+    public Byte abs(Byte x) {
         return (byte) Math.abs(x);
     }
 
     @Override
-    public Byte sqr(Byte x) throws OverflowException, IllegalOperationException {
+    public Byte sqr(Byte x) {
         return (byte) (x * x);
     }
 }

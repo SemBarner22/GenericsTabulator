@@ -12,19 +12,6 @@ public class GenericTabulator implements Tabulator {
 
     @Override
     public Object[][][] tabulate(String mode, String expression, int x1, int x2, int y1, int y2, int z1, int z2) throws Exception {
-       /* switch (mode) {
-            case "i":
-                operator = new IntegerOperator();
-                strictTabulate(operator, expression, x1, x2, y1, y2, z1, z2);
-            case "d":
-                operator = new DoubleOperator();
-                strictTabulate(operator, expression, x1, x2, y1, y2, z1, z2);
-            case "bi":
-                operator = new BigIntegerOperator();
-                strictTabulate(operator, expression, x1, x2, y1, y2, z1, z2);
-            default:
-                throw new UnknownModeException("Unknown mode");
-        } */
         if (mode.equals("i")) {
             operator = new IntegerOperator(true);
             return strictTabulate(operator, expression, x1, x2, y1, y2, z1, z2);
@@ -54,19 +41,19 @@ public class GenericTabulator implements Tabulator {
         } catch (ParsingException e) {
             System.out.println("Exception while parsing");
         }
-        for (int i = x1; i <= x2; i++) {
-            for (int j = y1; j <= y2; j++) {
-                for (int k = z1; k <= z2; k++) {
+        for (int x = x1; x <= x2; x++) {
+            for (int y = y1; y <= y2; y++) {
+                for (int z = z1; z <= z2; z++) {
                     try {
-                        res[i - x1][j - y1][k - z1] = in.evaluate(operator.parseNumber(Integer.toString(i)), operator
-                                .parseNumber(Integer.toString(j)), operator.parseNumber(Integer.toString(k)));
+                        res[x - x1][y - y1][z - z1] = in.evaluate(operator.parseNumber(Integer.toString(x)), operator
+                                .parseNumber(Integer.toString(y)), operator.parseNumber(Integer.toString(z)));
                     } catch (EvaluatingException e) {
-                        res[i - x1][j - y1][k - z1] = null;
+                        res[x - x1][y - y1][z - z1] = null;
                     }
+
                 }
             }
         }
-        //parsing.StringParser<T> = new parsing.StringParser<>();
         return res;
     }
 }

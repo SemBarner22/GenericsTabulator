@@ -6,8 +6,8 @@ import exceptions.IllegalOperationException;
 import exceptions.OverflowException;
 import operator.Operator;
 
-public class CheckedSqrt<T> extends AbstractUnaryOperation<T> {
-    public CheckedSqrt(TripleExpression<T> x, Operator<T> operator) {
+public class CheckedSqr<T> extends AbstractUnaryOperation<T> {
+    public CheckedSqr(TripleExpression<T> x, Operator<T> operator) {
         super(x, operator);
     }
 

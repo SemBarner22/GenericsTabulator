@@ -1,9 +1,5 @@
 package operator;
 
-import exceptions.EvaluatingException;
-import exceptions.IllegalOperationException;
-import exceptions.OverflowException;
-
 public class DoubleOperator implements Operator<Double> {
     @Override
     public Double parseNumber(String number) {
@@ -11,34 +7,34 @@ public class DoubleOperator implements Operator<Double> {
     }
 
     @Override
-    public Double add(Double x, Double y) throws OverflowException {
+    public Double add(Double x, Double y) {
         return x + y;
     }
 
     @Override
-    public Double sub(Double x, Double y) throws OverflowException {
+    public Double sub(Double x, Double y) {
         return x - y;
     }
 
     @Override
-    public Double mul(Double x, Double y) throws OverflowException {
+    public Double mul(Double x, Double y) {
         return x * y;
     }
 
     @Override
-    public Double div(Double x, Double y) throws EvaluatingException {
+    public Double div(Double x, Double y) {
         return x / y;
     }
 
 
     @Override
     public Double max(Double x, Double y) {
-        return x > y ? x : y;
+        return max(x, y);
     }
 
     @Override
     public Double min(Double x, Double y) {
-        return x > y ? y : x;
+        return min(x, y);
     }
 
     @Override
@@ -47,17 +43,17 @@ public class DoubleOperator implements Operator<Double> {
     }
 
     @Override
-    public Double not(Double x) throws OverflowException {
+    public Double not(Double x) {
         return -x;
     }
 
     @Override
-    public Double abs(Double x) throws OverflowException {
+    public Double abs(Double x) {
         return Math.abs(x);
     }
 
     @Override
-    public Double sqr(Double x) throws OverflowException {
+    public Double sqr(Double x) {
         return x * x;
     }
 }

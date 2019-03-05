@@ -5,10 +5,10 @@ import exceptions.IllegalOperationException;
 import exceptions.OverflowException;
 
 public class IntegerOperator implements Operator<Integer> {
-    public boolean checked;
+    public boolean checkOverflow;
 
     public IntegerOperator(boolean b) {
-        this.checked = b;
+        this.checkOverflow = b;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer add(Integer x, Integer y) throws OverflowException {
-        if (checked) {
+        if (checkOverflow) {
             checkAdd(x, y);
         }
         return x + y;
@@ -41,7 +41,7 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer sub(Integer x, Integer y) throws OverflowException {
-        if (checked) {
+        if (checkOverflow) {
             checkSub(x, y);
         }
         return x - y;
@@ -58,7 +58,7 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer mul(Integer x, Integer y) throws OverflowException {
-        if (checked) {
+        if (checkOverflow) {
             checkMul(x, y);
         }
         return x * y;
@@ -82,12 +82,12 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer max(Integer x, Integer y) {
-        return x > y ? x : y;
+        return max(x, y);
     }
 
     @Override
     public Integer min(Integer x, Integer y) {
-        return x > y ? y : x;
+        return min(x, y);
     }
 
     @Override
@@ -100,7 +100,7 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer div(Integer x, Integer y) throws IllegalOperationException, OverflowException {
-        if (checked) {
+        if (checkOverflow) {
             checkDiv(x, y);
         }
         if (y == 0) {
@@ -109,7 +109,7 @@ public class IntegerOperator implements Operator<Integer> {
         return x / y;
     }
 
-    public void checkDiv(Integer x, Integer y) throws OverflowException, IllegalOperationException {
+    public void checkDiv(Integer x, Integer y) throws OverflowException {
         if (x == Integer.MIN_VALUE && y == -1) {
             throw new OverflowException("Divide");
         }
@@ -118,7 +118,7 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer not(Integer x) throws OverflowException {
-        if (checked) {
+        if (checkOverflow) {
             checkNot(x);
         }
         return -x;
@@ -132,10 +132,10 @@ public class IntegerOperator implements Operator<Integer> {
 
     @Override
     public Integer abs(Integer x) throws OverflowException {
-        if (checked) {
+        if (checkOverflow) {
             checkAbs(x);
         }
-        return max(x, -x);
+        return Math.abs(x);
     }
 
     public void checkAbs(Integer x) throws OverflowException {
@@ -145,7 +145,7 @@ public class IntegerOperator implements Operator<Integer> {
     }
 
     @Override
-    public Integer sqr(Integer x) throws IllegalOperationException, OverflowException {
+    public Integer sqr(Integer x) throws OverflowException {
         return mul(x, x);
     }
 }

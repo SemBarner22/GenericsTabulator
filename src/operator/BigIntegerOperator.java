@@ -14,17 +14,17 @@ public class BigIntegerOperator implements Operator<BigInteger> {
     }
 
     @Override
-    public BigInteger add(BigInteger x, BigInteger y) throws OverflowException {
+    public BigInteger add(BigInteger x, BigInteger y) {
         return x.add(y);
     }
 
     @Override
-    public BigInteger sub(BigInteger x, BigInteger y) throws OverflowException {
+    public BigInteger sub(BigInteger x, BigInteger y) {
         return x.subtract(y);
     }
 
     @Override
-    public BigInteger mul(BigInteger x, BigInteger y) throws OverflowException {
+    public BigInteger mul(BigInteger x, BigInteger y) {
         return x.multiply(y);
     }
 
@@ -63,17 +63,17 @@ public class BigIntegerOperator implements Operator<BigInteger> {
     }
 
     @Override
-    public BigInteger not(BigInteger x) throws OverflowException {
+    public BigInteger not(BigInteger x) {
         return x.not();
     }
 
     @Override
-    public BigInteger abs(BigInteger x) throws OverflowException {
+    public BigInteger abs(BigInteger x) {
         return x.abs();
     }
 
     @Override
-    public BigInteger sqr(BigInteger x) throws OverflowException {
+    public BigInteger sqr(BigInteger x) {
         return x.multiply(x);
     }
 }

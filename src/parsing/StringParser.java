@@ -13,7 +13,7 @@ public class StringParser<T> {
     private int balance;
     public Operator<T> operation;
 
-    public StringParser(String expression, Operator<T> op) {
+    StringParser(String expression, Operator<T> op) {
         operation = op;
         token = Token.BEGIN;
         index = 0;
@@ -37,7 +37,7 @@ public class StringParser<T> {
         return name;
     }
 
-    protected void next() throws ParsingException, EvaluatingException {
+    protected void next() throws ParsingException {
         while (index < expression.length() && Character.isWhitespace(expression.charAt(index))) {
             index++;
         }
@@ -92,7 +92,6 @@ public class StringParser<T> {
                 index++;
             }
             int right = index;
-            // TODO
             stringNumber = expression.substring(left, right);
             token = Token.CONST;
             index--;
