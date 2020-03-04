@@ -5,7 +5,7 @@
   Input file contains list of files and directories, which should be recursively visited. Exceptions are caught and handled properly.</p>
 
 <p>Sample:</p>
-  <p>Input file:</p>
+  <p>&nbsp;Input file:</p>
       <p>java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
       java/info/kgeorgiy/java/advanced/walk/samples</p>
 
