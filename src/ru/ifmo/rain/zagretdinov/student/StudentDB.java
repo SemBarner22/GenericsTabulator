@@ -1,9 +1,9 @@
-package zagretdinov.student;
+package ru.ifmo.rain.zagretdinov.student;
 
 
-import advanced.student.AdvancedStudentGroupQuery;
-import advanced.student.Group;
-import advanced.student.Student;
+import info.kgeorgiy.java.advanced.student.AdvancedStudentGroupQuery;
+import info.kgeorgiy.java.advanced.student.Group;
+import info.kgeorgiy.java.advanced.student.Student;
 
 import java.util.*;
 import java.util.function.BinaryOperator;

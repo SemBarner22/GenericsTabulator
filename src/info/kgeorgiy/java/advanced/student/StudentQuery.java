@@ -1,4 +1,4 @@
-package advanced.student;
+package info.kgeorgiy.java.advanced.student;
 
 import java.util.*;
 import java.util.stream.Collectors;

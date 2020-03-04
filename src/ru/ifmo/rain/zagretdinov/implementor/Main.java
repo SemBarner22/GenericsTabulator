@@ -1,4 +1,4 @@
-package zagretdinov.implementor;
+package ru.ifmo.rain.zagretdinov.implementor;
 
 import info.kgeorgiy.java.advanced.implementor.ImplerException;
 

@@ -4,4 +4,4 @@
  *
  * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
  */
-package advanced.student;
+package info.kgeorgiy.java.advanced.student;

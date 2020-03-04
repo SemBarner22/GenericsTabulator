@@ -1,4 +1,4 @@
-package advanced.implementor;
+package info.kgeorgiy.java.advanced.implementor;
 
 /**
  * Thrown by {@link info.kgeorgiy.java.advanced.implementor.Impler} when an error occurred.

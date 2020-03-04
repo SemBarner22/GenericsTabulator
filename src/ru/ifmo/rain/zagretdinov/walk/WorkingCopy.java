@@ -1,4 +1,4 @@
-package zagretdinov.walk;
+package ru.ifmo.rain.zagretdinov.walk;
 
 import java.util.*;
 

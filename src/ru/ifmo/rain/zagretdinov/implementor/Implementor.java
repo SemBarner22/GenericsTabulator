@@ -1,7 +1,7 @@
-package zagretdinov.implementor;
+package ru.ifmo.rain.zagretdinov.implementor;
 
-import advanced.implementor.Impler;
-import advanced.implementor.ImplerException;
+import info.kgeorgiy.java.advanced.implementor.Impler;
+import info.kgeorgiy.java.advanced.implementor.ImplerException;
 
 import java.io.BufferedWriter;
 import java.io.File;

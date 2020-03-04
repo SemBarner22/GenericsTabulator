@@ -1,4 +1,4 @@
-package zagretdinov.arrayset;
+package ru.ifmo.rain.zagretdinov.arrayset;
 
 import java.util.*;
 
