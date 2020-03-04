@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
  */
-public interface StudentGroupQuery extends info.kgeorgiy.java.advanced.student.StudentQuery {
+public interface StudentGroupQuery extends StudentQuery {
     /** Returns student groups, where both groups and students within a group are ordered by name. */
     List<Group> getGroupsByName(Collection<Student> students);
 
