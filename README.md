@@ -6,18 +6,18 @@
 
 <p>Sample:</p>
   <p>Input file:</p>
-      <p>java/info/kgeorgiy/java/advanced/walk/samples/binary</p>
-      <p>java/info/kgeorgiy/java/advanced/walk/samples</p>
+      <p>java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
+      java/info/kgeorgiy/java/advanced/walk/samples</p>
 
-  Output file:
-      8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary
-      050c5d2e java/info/kgeorgiy/java/advanced/walk/samples/1
-      2076af58 java/info/kgeorgiy/java/advanced/walk/samples/12
-      72d607bb java/info/kgeorgiy/java/advanced/walk/samples/123
-      81ee2b55 java/info/kgeorgiy/java/advanced/walk/samples/1234
-      8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary
+  <p>Output file:</p>
+      <p>8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
+      050c5d2e java/info/kgeorgiy/java/advanced/walk/samples/1<br>
+      2076af58 java/info/kgeorgiy/java/advanced/walk/samples/12<br>
+      72d607bb java/info/kgeorgiy/java/advanced/walk/samples/123<br>
+      81ee2b55 java/info/kgeorgiy/java/advanced/walk/samples/1234<br>
+      8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary</p>
 
-  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.walk RecursiveWalk <full classname>
+  <p>Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.walk RecursiveWalk <full classname></p>
        
 <h1>Task 2. ArraySortedSet</h1> 
   Class ArraySet, implementing NavigableSet, is an unmodifiable sorted set. Exceptions are caught and handled properly.
