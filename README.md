@@ -1,4 +1,4 @@
-# GenericsTabulator
+# GenericsTabulator (Expression Parser), Recursive Walk, ArraySet, StudentDB, Implementor
 
 Task 1. File Walker
   Class RecursiveWalk, counting FNV hash of files in directories.
