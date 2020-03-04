@@ -37,7 +37,7 @@
   Classes CheckedAdd, CheckedSubtract, CheckedMultiply, CheckedDivide and CheckedNegate implement TripleExpression.<br>
   Class GenericTabulator implements Tabulator, it makes a sheet of solutions of a given expression.<br>
   mode - modes of evaluation:<br>
-    &nbsp;&nbsp;&nbsp;&nbs;pi — int with overflow check;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;pi — int with overflow check;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;d — double without overflow check;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;bi — BigInteger.<br>
     &nbsp;&nbsp;&nbsp;&nbsp;x1, x2 — min and max values of variable x (included)<br>
