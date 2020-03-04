@@ -9,7 +9,7 @@
       <p>&nbsp;&nbsp;&nbsp;&nbsp;java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
       &nbsp;&nbsp;&nbsp;&nbsp;java/info/kgeorgiy/java/advanced/walk/samples</p>
 
-  <p>Output file:</p>
+  <p>&nbsp;&nbsp;Output file:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
       &nbsp;&nbsp;&nbsp;&nbsp;050c5d2e java/info/kgeorgiy/java/advanced/walk/samples/1<br>
       &nbsp;&nbsp;&nbsp;&nbsp;2076af58 java/info/kgeorgiy/java/advanced/walk/samples/12<br>
@@ -20,8 +20,8 @@
   <p>Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.walk RecursiveWalk <full classname></p>
        
 <h1>Task 2. ArraySortedSet</h1> 
-  Class ArraySet, implementing NavigableSet, is an unmodifiable sorted set. Exceptions are caught and handled properly.
-  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.arrayset NavigableSet <full classname> 
+  <p>Class ArraySet, implementing NavigableSet, is an unmodifiable sorted set. Exceptions are caught and handled properly.<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.arrayset NavigableSet <full classname></p>
   
 <h1>Task 3. Student DataBase</h1>  
   Class StudentDB implements AdvancedStudentGroupQuery.
