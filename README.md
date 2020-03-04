@@ -4,18 +4,18 @@
   <p>Class RecursiveWalk, counting FNV hash of files in directories.<br>
   Input file contains list of files and directories, which should be recursively visited. Exceptions are caught and handled properly.</p>
 
-<p>Sample:</p>
-  <p>&nbsp;Input file:</p>
-      <p>java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
-      java/info/kgeorgiy/java/advanced/walk/samples</p>
+<p>Sample:
+  &nbsp;&nbsp;Input file:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;java/info/kgeorgiy/java/advanced/walk/samples</p>
 
   <p>Output file:</p>
-      <p>8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
-      050c5d2e java/info/kgeorgiy/java/advanced/walk/samples/1<br>
-      2076af58 java/info/kgeorgiy/java/advanced/walk/samples/12<br>
-      72d607bb java/info/kgeorgiy/java/advanced/walk/samples/123<br>
-      81ee2b55 java/info/kgeorgiy/java/advanced/walk/samples/1234<br>
-      8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;050c5d2e java/info/kgeorgiy/java/advanced/walk/samples/1<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;2076af58 java/info/kgeorgiy/java/advanced/walk/samples/12<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;72d607bb java/info/kgeorgiy/java/advanced/walk/samples/123<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;81ee2b55 java/info/kgeorgiy/java/advanced/walk/samples/1234<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary</p>
 
   <p>Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.walk RecursiveWalk <full classname></p>
        
