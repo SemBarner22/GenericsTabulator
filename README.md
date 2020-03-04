@@ -1,8 +1,8 @@
 # GenericsTabulator (Expression Parser), Recursive Walk, ArraySet, StudentDB, Implementor
 
 <h1>Task 1. File Walker</h1>
-  Class RecursiveWalk, counting FNV hash of files in directories.
-  Input file contains list of files and directories, which should be recursively visited. Exceptions are caught and handled properly.
+  <p>Class RecursiveWalk, counting FNV hash of files in directories.<br>
+  Input file contains list of files and directories, which should be recursively visited. Exceptions are caught and handled properly.</p>
 
 Sample:
   Input file:
