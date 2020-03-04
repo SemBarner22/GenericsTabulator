@@ -19,20 +19,20 @@ Sample:
 
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.walk RecursiveWalk <full classname>
        
-Task 2. ArraySortedSet 
+<h1>Task 2. ArraySortedSet</h1> 
   Class ArraySet, implementing NavigableSet, is an unmodifiable sorted set. Exceptions are caught and handled properly.
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.arrayset NavigableSet <full classname> 
   
-Task 3. Student DataBase  
+<h1>Task 3. Student DataBase</h1>  
   Class StudentDB implements AdvancedStudentGroupQuery.
   Lambdas and streams are used.
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.student StudentGroupQuery <full classname> 
 
-Task 4. Implementor
+<h1>Task 4. Implementor</h1>
   Class Implementor implements Impler. It generates implementations of Abstract classes and Interfaces, overrided methods return default values.
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.implementor advanced <full classname>   
     
-Task 5. Expression Parser
+<h1>Task 5. Expression Parser</h1>
   Implements interfaces Parser. Exceptions are caught and handled properly.
   Classes CheckedAdd, CheckedSubtract, CheckedMultiply, CheckedDivide and CheckedNegate implement TripleExpression.
   Class GenericTabulator implements Tabulator, it makes a sheet of solutions of a given expression.
