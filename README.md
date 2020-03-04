@@ -4,7 +4,7 @@
   <p>Class RecursiveWalk, counting FNV hash of files in directories.<br>
   Input file contains list of files and directories, which should be recursively visited. Exceptions are caught and handled properly.</p>
 
-<p>Sample:
+<p>Sample:<br>
   &nbsp;&nbsp;Input file:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;java/info/kgeorgiy/java/advanced/walk/samples/binary<br>
       &nbsp;&nbsp;&nbsp;&nbsp;java/info/kgeorgiy/java/advanced/walk/samples</p>
