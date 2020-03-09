@@ -1,0 +1,1 @@
+java -cp . -p . -m info.kgeorgiy.java.advanced.student AdvancedStudentGroupQuery ru.ifmo.rain.zagretdinov.student.StudentDB
