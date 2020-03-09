@@ -47,4 +47,5 @@
     &nbsp;&nbsp;&nbsp;&nbsp;abs, square, mod (multiply/divide priority). <br> 
     &nbsp;&nbsp;&nbsp;&nbsp;u — int without overflow check;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;f — float without overflow check;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;b — byte without overflow check.</p>
+    &nbsp;&nbsp;&nbsp;&nbsp;b — byte without overflow check.<br>
+  Usage example: System.out.println(parse("1 + 5 mod 3", new FloatOperator()).evaluate(-3f, -5f, -7f));</p> 
