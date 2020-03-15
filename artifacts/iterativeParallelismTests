@@ -1,0 +1,1 @@
+java -cp . -p . -m info.kgeorgiy.java.advanced.concurrent list ru.ifmo.rain.zagretdinov.concurrent.IterativeParallelism
