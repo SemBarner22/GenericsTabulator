@@ -50,3 +50,10 @@
     &nbsp;&nbsp;&nbsp;&nbsp;f — float without overflow check;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;b — byte without overflow check.<br>
   Usage example: System.out.println(parse("1 + 5 mod 3", new FloatOperator()).evaluate(-3f, -5f, -7f));</p> 
+  
+<h1>Tasks 6. Iterative Parallelism</h1>
+  <p>Implements interfaces ListIP. Throws InterruptedException<br>
+   &nbsp;&nbsp;filter(threads, list, predicate) — return List containing elements, passed predicate;<br>
+   &nbsp;&nbsp;map(threads, list, function) — return List containing mapped elements;<br>
+   &nbsp;&nbsp;join(threads, list) — concatenate elements to String.</p>
+  
