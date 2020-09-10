@@ -57,3 +57,27 @@
    &nbsp;&nbsp;map(threads, list, function) — return List containing mapped elements;<br>
    &nbsp;&nbsp;join(threads, list) — concatenate elements to String.</p>
   
+<h1>Tasks 7. Parallel Mapper</h1>
+  <p>Implements interfaces ListIP. Throws InterruptedException<br>
+   &nbsp;&nbsp;filter(threads, list, predicate) — return List containing elements, passed predicate;<br>
+   &nbsp;&nbsp;map(threads, list, function) — return List containing mapped elements;<br>
+   &nbsp;&nbsp;join(threads, list) — concatenate elements to String.<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.mapper advanced <full classname></p>
+  
+<h1>Tasks 7. Parallel Mapper</h1>
+  <p>Implements interfaces ListIP. Throws InterruptedException<br>
+   &nbsp;&nbsp;filter(threads, list, predicate) — return List containing elements, passed predicate;<br>
+   &nbsp;&nbsp;map(threads, list, function) — return List containing mapped elements;<br>
+   &nbsp;&nbsp;join(threads, list) — concatenate elements to String.<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.mapper advanced <full classname></p> 
+ 
+ <h1>Tasks 9. Web Crawler</h1>
+  <p>Implements interfaces ListIP. Throws InterruptedException<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.crawler hard <full classname></p>
+  
+ <h1>Tasks 10. HelloUDP</h1>
+  <p>Implements interfaces ListIP. Throws InterruptedException<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello server-evil<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello client-evil
+  <full classname></p>
+  
