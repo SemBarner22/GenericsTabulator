@@ -72,12 +72,19 @@
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.mapper advanced <full classname></p> 
  
  <h1>Tasks 9. Web Crawler</h1>
-  <p>Implements interfaces ListIP. Throws InterruptedException<br>
+  <p>
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.crawler hard <full classname></p>
   
- <h1>Tasks 10. HelloUDP</h1>
+ <h1>Tasks 10. HelloUDPServer/Client</h1>
   <p>Implements interfaces ListIP. Throws InterruptedException<br>
-  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello server-evil<br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello server-evil <br>
   Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello client-evil
   <full classname></p>
+  
+<h1>Tasks 11. HelloUDPNon-blockingServer/Client</h1>
+  <p>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello server-evil <br>
+  Usage: java -cp . -p . -m info.kgeorgiy.java.advanced.hello client-evil
+  <full classname></p>
+  
   
